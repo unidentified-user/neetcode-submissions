@@ -1,6 +1,6 @@
 class Solution:
     def topKFrequent(self, nums: List[int], k: int) -> List[int]:
-        # naive solution
+        # naive solution – O(n log n)
         frequencies = dict.fromkeys(nums, 0)
         
         for num in nums:
